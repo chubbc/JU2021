@@ -1,7 +1,11 @@
-Allows for a <a href="https://github.com/hakimel/reveal.js/">reveal.js</a> presentation consisting of queued up Manim animations. Based on <a href="https://github.com/anjandn/manim_reveal">anjandn/manim_reveal</a>, but updated to work with ManimCE 0.7.0 (manim_reveal was broken by manim updates).
+Talk given on the paper [*General tensor network decoding of 2D Pauli codes*](https://arxiv.org/abs/2101.04125) and package [*SweepContractor.jl*](https://github.com/chubbc/SweepContractor.jl) to the [Quantum Resources Group](https://www.quantum-resources.com).
 
-Go <a href="https://christopherchubb.com/manim_slides">here</a> for a live demonstration of it working.
+<br>
 
-Manim code is put into <code>./talk.py</code>, and the corresponding slides need to be put into <code>./index.html</code>. To compile the manim videos for slide X run <code>manimce talk.py X</code>.
+**Title:** Tensor network decoding of 2D quantum codes
 
-To view a local copy you must run <code>npm start</code> on the local copy.
+**Location:** Jagiellonian University, Krakow, Poland
+
+**Date:** 2021-12-06
+
+**Abstract:** In this talk I'm going to discuss some recent work on tensor network (TN) decoders for arbitrary 2D Pauli codes. TN decoders are a powerful framework that allows one to systematically construct decoders that well-approximate the optimal decoder for large families of codes. I am going to talk about some recent work demonstrating that TN decoding for several families of 2D Pauli codes can not only be performed efficiently, but can yield state-of-the-art accuracies, in some cases out-performing bespoke code-specific decoders. Core to this is a novel TN contraction algorithm inspired by computational geometry methods, which I will also talk about.
