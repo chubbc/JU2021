@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Title</title>
+		<title>Tensor network decoding of 2D Pauli codes</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -16,8 +16,13 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<script src="js/add_video_slide.js" slide_scene="Title"></script>
-				<script src="js/add_video_slide.js" slide_scene="ExampleSlide"></script>
+				<!--0--><script src="js/add_video_slide.js" slide_scene="Title"></script>
+				<!--1--><script src="js/add_video_slide.js" slide_scene="EC"></script>
+				<!--2--><script src="js/add_video_slide.js" slide_scene="MLD"></script>
+				<!--3--><script src="js/add_video_slide.js" slide_scene="TN"></script>
+				<!--4--><script src="js/add_video_slide.js" slide_scene="Contract"></script>
+				<!--5--><script src="js/add_video_slide.js" slide_scene="Numerics"></script>
+				<!--6--><script src="js/add_video_slide.js" slide_scene="Conclusion"></script>
 			</div>
 		</div>
 
@@ -33,7 +38,10 @@
 			Reveal.initialize({
 				hash: false,
 				transition: 'none',
+				backgroundTransition: 'none',
 				progress: false,
+				autoPlayMedia: false,
+				controls: false,
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]

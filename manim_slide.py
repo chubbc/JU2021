@@ -7,6 +7,7 @@ config.video_dir= "./video_slides"
 config.flush_cache = True
 config.disable_caching = True
 class SlideScene(Scene):
+    offset=0.0
     breaks=[0]
     video_slides_dir="./video_slides"
     def setup(self):
@@ -14,11 +15,14 @@ class SlideScene(Scene):
         self.breaks=[0]
 
     def slide_break(self,t=0.5):
-        self.breaks+=[self.renderer.time+t/2]
+        self.breaks+=[self.renderer.time+t/2+self.offset]
         self.wait(t)
 
+    def add_to_offset(self,t):
+        self.offset+=t
+
     def save_times(self):
-        self.breaks+=[self.renderer.time]
+        self.breaks+=[self.renderer.time+self.offset]
         out=""
         dirname=os.path.dirname(self.renderer.file_writer.movie_file_path)
         for i in range(len(self.breaks)-1):
@@ -56,7 +60,7 @@ class Title(SlideScene):
 
         self.play(*[FadeOut(x) for x in [title,arxiv,name,ethz,udes]],run_time=0.5)
         self.wait(0.5)
-        
+
 class ExampleSlide(SlideScene):
     def construct(self):
         circle = Circle(radius=1, color=BLUE)
@@ -75,4 +79,3 @@ class ExampleSlide(SlideScene):
         self.slide_break()
         self.play(Rotating(dot, about_point=[2, 0, 0]), run_time=1.5)
         self.wait()
-

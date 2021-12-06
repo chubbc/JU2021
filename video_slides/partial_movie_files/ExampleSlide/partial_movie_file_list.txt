@@ -1,0 +1,9 @@
+# This file is used internally by FFMPEG.
+file 'file:/home/chubbc/Dropbox/Research/RandomTiling/Talks/Krakow2021/video_slides/partial_movie_files/ExampleSlide/uncached_00000.mp4'
+file 'file:/home/chubbc/Dropbox/Research/RandomTiling/Talks/Krakow2021/video_slides/partial_movie_files/ExampleSlide/uncached_00001.mp4'
+file 'file:/home/chubbc/Dropbox/Research/RandomTiling/Talks/Krakow2021/video_slides/partial_movie_files/ExampleSlide/uncached_00002.mp4'
+file 'file:/home/chubbc/Dropbox/Research/RandomTiling/Talks/Krakow2021/video_slides/partial_movie_files/ExampleSlide/uncached_00003.mp4'
+file 'file:/home/chubbc/Dropbox/Research/RandomTiling/Talks/Krakow2021/video_slides/partial_movie_files/ExampleSlide/uncached_00004.mp4'
+file 'file:/home/chubbc/Dropbox/Research/RandomTiling/Talks/Krakow2021/video_slides/partial_movie_files/ExampleSlide/uncached_00005.mp4'
+file 'file:/home/chubbc/Dropbox/Research/RandomTiling/Talks/Krakow2021/video_slides/partial_movie_files/ExampleSlide/uncached_00006.mp4'
+file 'file:/home/chubbc/Dropbox/Research/RandomTiling/Talks/Krakow2021/video_slides/partial_movie_files/ExampleSlide/uncached_00007.mp4'
